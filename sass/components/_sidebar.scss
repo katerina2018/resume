@@ -1,55 +1,57 @@
 .main-photo {
     width: 300px;
     border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sidebar-section {
-    background: #013848;
-    padding: 40px 15px;
+    background-color: $accent-color;
+    padding: 40px 20px;
+    width: 30%;
 }
 
 .contacts-section,
 .tech-skills-section,
 .soft-skills-section {
-    margin: 50px 0 0 40px;
+    margin-top: 50px;
 }
 
 .sidebar-title {
     font-weight: bold;
     font-size: 22px;
     line-height: 27px;
-    color: #fff;
+    color: $white-color;
     margin-bottom: 10px;
+    text-align: center;
+}
+
+.contacts-section-block {
+    display: flex;
+    align-items: center;
 }
 
 .contacts-section-type {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 24px;
-    color: #fff;
+    font-weight: 700;
+    color: $white-color;
     margin-right: 5px;
 }
 
 .contacts-section-link {
     color: #fffefd;
-    font-size: 14px;
-    line-height: 24px;
 }
 
-.contacts-section-link-tel {
-    text-decoration: none;
-}
-
+// .contacts-section-link-tel {
+//     text-decoration: none;
+// }
 .skills-list {
     padding: 0 0 0 20px;
 }
 
 .skills-item {
-    font-size: 14px;
-    line-height: 24px;
-    color: #FFFFFF;
+    color: $white-color;
 }
 
 .skills-item::marker {
-    color: #FB6D3A;
+    color: $light-bg-color;
 }

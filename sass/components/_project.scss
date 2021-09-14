@@ -1,5 +1,102 @@
 /* my project section */
 
+.filter-cards {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+        margin-top: -30px;
+    }
+    @media screen and (min-width: $tablet) and (max-width: $desktop),
+    (orientation: landscape) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+        margin-top: -30px;
+    }
+}
+
+.filter-cards__item {
+    @media screen and (max-width: $tablet) {
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: $tablet) and (max-width: $desktop),
+    (orientation: landscape) {
+        width: calc((100% - 2*30px)/2);
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc((100% - 3*30px)/3);
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+}
+
+.filter-cards__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    transition: box-shadow $time-animation $timing-function;
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.filter-cards__thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.filter-cards__description {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: $white-color;
+    background: rgba(1, 55, 72, 0.9);
+    transition: transform $time-animation $timing-function;
+    .filter-cards__link:hover &,
+    .filter-cards__link:focus & {
+        transform: translateY(-100%);
+    }
+}
+
+.filter-cards__content {
+    flex-grow: 1;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 20px 24px;
+}
+
+.filter-cards__title {
+    margin-bottom: 4px;
+    color: $title-text-color;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.filter-cards__text {
+    color: $parag-color;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+}
+
 .my-project-list {
     padding-right: 16px;
 }
