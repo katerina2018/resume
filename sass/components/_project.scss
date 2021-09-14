@@ -1,0 +1,32 @@
+/* my project section */
+
+.my-project-list {
+    padding-right: 16px;
+}
+
+.my-project-item {
+    color: $black-color;
+}
+
+.my-project-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.underline {
+    flex-grow: 1;
+    border-bottom: 1px dotted $auth-nav-color;
+}
+
+.my-project-link {
+    color: $auth-nav-color;
+    transition: color $time-animation $timing-function;
+    &:hover,
+    &:focus {
+        color: $link-color;
+    }
+}
+
+.my-project-bracket {
+    color: $black-color;
+}

@@ -1,0 +1,38 @@
+/* my work experience section */
+
+.experience-company-block {
+    margin-bottom: 15px;
+}
+
+.experience-position {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $black-color;
+    margin-bottom: 10px;
+}
+
+.experience-company {
+    color: $accent-color;
+}
+
+.experience-period,
+.my-education-period {
+    font-size: 12px;
+    line-height: 1.25;
+    color: $parag-color;
+    margin-bottom: 10px;
+}
+
+.experience-divider,
+.my-education-divider {
+    color: $black-color;
+}
+
+.experience-duties {
+    padding-bottom: 18px;
+}
+
+.experience-duty {
+    color: $dark-bg-color;
+}

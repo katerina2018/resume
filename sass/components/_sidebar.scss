@@ -1,0 +1,55 @@
+.main-photo {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.sidebar-section {
+    background: #013848;
+    padding: 40px 15px;
+}
+
+.contacts-section,
+.tech-skills-section,
+.soft-skills-section {
+    margin: 50px 0 0 40px;
+}
+
+.sidebar-title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.contacts-section-type {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.contacts-section-link {
+    color: #fffefd;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.contacts-section-link-tel {
+    text-decoration: none;
+}
+
+.skills-list {
+    padding: 0 0 0 20px;
+}
+
+.skills-item {
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.skills-item::marker {
+    color: #FB6D3A;
+}
