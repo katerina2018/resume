@@ -46,6 +46,7 @@
     font-weight: 700;
     color: $title-text-color;
     margin-right: 5px;
+    padding-bottom: 10px;
     @media screen and (min-width: $tablet) {
         color: $white-color;
     }
@@ -53,6 +54,7 @@
 
 .contacts-section-link {
     color: $title-text-color;
+    padding-bottom: 10px;
     @media screen and (min-width: $tablet) {
         color: $white-color;
     }
@@ -64,6 +66,7 @@
 
 .skills-item {
     color: $title-text-color;
+    line-height: 2;
     @media screen and (min-width: $tablet) {
         color: $white-color;
     }

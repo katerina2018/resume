@@ -652,6 +652,7 @@ p {
   font-weight: 700;
   color: #212121;
   margin-right: 5px;
+  padding-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -662,6 +663,7 @@ p {
 
 .contacts-section-link {
   color: #212121;
+  padding-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -676,6 +678,7 @@ p {
 
 .skills-item {
   color: #212121;
+  line-height: 2;
 }
 
 @media screen and (min-width: 768px) {
