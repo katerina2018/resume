@@ -1,14 +1,11 @@
-.main-photo {
-    width: 300px;
-    border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
+//  sidebar section
 .sidebar-section {
-    background-color: $accent-color;
-    padding: 40px 20px;
-    width: 30%;
+    @media screen and (min-width: $tablet) {
+        display: block;
+        background-color: $accent-color;
+        padding: 40px 20px;
+        width: 30%;
+    }
 }
 
 .contacts-section,
@@ -17,13 +14,27 @@
     margin-top: 50px;
 }
 
+.main-photo {
+    display: none;
+    @media screen and (min-width: $tablet) {
+        display: block;
+        width: 300px;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .sidebar-title {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 22px;
     line-height: 27px;
-    color: $white-color;
+    color: $title-text-color;
     margin-bottom: 10px;
     text-align: center;
+    @media screen and (min-width: $tablet) {
+        color: $white-color;
+    }
 }
 
 .contacts-section-block {
@@ -33,23 +44,29 @@
 
 .contacts-section-type {
     font-weight: 700;
-    color: $white-color;
+    color: $title-text-color;
     margin-right: 5px;
+    @media screen and (min-width: $tablet) {
+        color: $white-color;
+    }
 }
 
 .contacts-section-link {
-    color: #fffefd;
+    color: $title-text-color;
+    @media screen and (min-width: $tablet) {
+        color: $white-color;
+    }
 }
 
-// .contacts-section-link-tel {
-//     text-decoration: none;
-// }
 .skills-list {
     padding: 0 0 0 20px;
 }
 
 .skills-item {
-    color: $white-color;
+    color: $title-text-color;
+    @media screen and (min-width: $tablet) {
+        color: $white-color;
+    }
 }
 
 .skills-item::marker {
