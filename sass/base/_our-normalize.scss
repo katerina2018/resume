@@ -54,7 +54,7 @@ p {
 .main-content-section {
     padding: 10px;
     width: 100%;
-    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    @media screen and (min-width: $tablet) {
         padding: 50px 50px;
         width: 70%;
     }
