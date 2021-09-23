@@ -629,7 +629,7 @@ p {
   font-size: 22px;
   line-height: 27px;
   color: #212121;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -692,20 +692,10 @@ p {
 }
 
 .modal-toggle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
   margin-left: auto;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #E5E5E5;
+  background-color: transparent;
+  border: none;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -720,16 +710,11 @@ p {
   }
 }
 
-.bg-icon {
-  width: 30px;
-  height: 30px;
-  background-color: #f7f2ef;
-  border-radius: 50%;
-}
-
 .modal-icon {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
+  fill: #FFFFFF;
+  stroke: #000000;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -760,8 +745,8 @@ p {
     -webkit-transform: translateX(-50%) scale(100%);
             transform: translateX(-50%) scale(100%);
     padding: 30px;
-    font-size: 12px;
-    line-height: 1.17;
+    font-size: 20px;
+    line-height: 1.8;
     letter-spacing: 0.01em;
     background: #FFFFFF;
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -796,8 +781,8 @@ p {
   position: absolute;
   right: 20px;
   top: 8px;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -811,6 +796,7 @@ p {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   color: #000000;
+  background-color: transparent;
 }
 
 @media screen and (min-width: 768px) {
