@@ -736,7 +736,7 @@ p {
   fill: #013848;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .backdrop {
     position: fixed;
     top: 0;

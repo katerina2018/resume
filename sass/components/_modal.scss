@@ -27,7 +27,7 @@
 }
 
 .backdrop {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $tablet - 1px) {
         position: fixed;
         top: 0;
         left: 0;
@@ -40,7 +40,7 @@
 }
 
 .modal {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $tablet - 1px) {
         position: absolute;
         left: 0%;
         transform: scaleX(1);
@@ -59,13 +59,13 @@
 }
 
 .backdrop.is-hidden .modal {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $tablet - 1px) {
         transform: scaleX(0);
     }
 }
 
 .backdrop.is-hidden {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $tablet - 1px) {
         opacity: 0;
         pointer-events: none;
         visibility: hidden;
@@ -85,7 +85,7 @@
     border: 1px solid rgba(0, 0, 0, .8);
     border-radius: 50%;
     background-color: transparent;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         display: none;
     }
 }
