@@ -63,6 +63,12 @@
     }
 }
 
+.soft-skills-section {
+    @media screen and (max-width: $tablet - 1px) {
+        display: none;
+    }
+}
+
 .skills-list {
     padding: 0 0 0 20px;
 }
