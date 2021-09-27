@@ -58,6 +58,9 @@
     @media screen and (min-width: $tablet) {
         color: $white-color;
     }
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+        font-size: 12px;
+    }
 }
 
 .skills-list {

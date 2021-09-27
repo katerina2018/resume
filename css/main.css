@@ -672,6 +672,12 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contacts-section-link {
+    font-size: 12px;
+  }
+}
+
 .skills-list {
   padding: 0 0 0 20px;
 }
@@ -738,12 +744,12 @@ p {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .modal {
     position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%) scale(100%);
-            transform: translateX(-50%) scale(100%);
+    left: 0%;
+    -webkit-transform: translateX(0) scaleX(1);
+            transform: translateX(0) scaleX(1);
     padding: 30px;
     font-size: 20px;
     line-height: 1.8;
@@ -756,16 +762,16 @@ p {
     transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    width: 360px;
+    width: 100vw;
     height: 100%;
     overflow-y: scroll;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .backdrop.is-hidden .modal {
-    -webkit-transform: translate(-50%, -50%) scale(50%);
-            transform: translate(-50%, -50%) scale(50%);
+    -webkit-transform: translateX(-100%) scaleX(0);
+            transform: translateX(-100%) scaleX(0);
   }
 }
 
@@ -779,8 +785,8 @@ p {
 
 .close {
   position: absolute;
-  right: 20px;
-  top: 8px;
+  right: 30px;
+  top: 30px;
   width: 46px;
   height: 46px;
   cursor: pointer;
