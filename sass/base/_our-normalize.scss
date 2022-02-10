@@ -1,21 +1,22 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: $parag-color;
-    background-color: $light-bg-color;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: $black-color;
+  background-color: $light-bg-color;
 }
 
 a {
-    display: block;
-    text-decoration: none;
+  display: block;
+  text-decoration: none;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -23,72 +24,71 @@ h2,
 h3,
 h4,
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    margin: 0 auto;
-    padding: 0 15px;
-    @media screen and (max-width: $tablet) {
-        max-width: $mobile;
-    }
-    @media screen and (min-width: $tablet) and (max-width: $desktop),
+  margin: 0 auto;
+  padding: 0 15px;
+  @media screen and (max-width: $tablet) {
+    max-width: $mobile;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop),
     (orientation: landscape) {
-        width: $tablet;
-    }
-    @media screen and (min-width: $desktop) {
-        width: $desktop;
-    }
+    width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }
 
 .main-section {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: $white-color;
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: $white-color;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .main-content-section {
-    padding: 10px;
-    width: 100%;
-    @media screen and (min-width: $tablet) {
-        padding: 50px 50px;
-        width: 70%;
-    }
+  padding: 10px;
+  width: 100%;
+  @media screen and (min-width: $tablet) {
+    padding: 50px 50px;
+    width: 70%;
+  }
 }
 
 .section-margin-bottom {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .main-suptitle {
-    font-size: 1.2em;
-    line-height: 1.21;
-    font-weight: 700;
-    color: $black-color;
-    margin-bottom: 20px;
+  font-size: 1.2em;
+  line-height: 1.21;
+  font-weight: 700;
+  color: $black-color;
+  margin-bottom: 20px;
 }
 
 .main-title {
-    font-weight: bold;
-    font-size: 2rem;
-    line-height: 55px;
-    color: $black-color;
-    margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 55px;
+  color: $black-color;
+  margin-bottom: 25px;
 }
 
 .section-title {
-    font-weight: bold;
-    font-size: 1.5em;
-    line-height: 1.22;
-    color: $title-text-color;
-    margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.22;
+  color: $title-text-color;
+  margin-bottom: 10px;
 }
 
 .text-discription {
-    line-height: 1.71;
-    color: $parag-color;
+  line-height: 1.71;
 }

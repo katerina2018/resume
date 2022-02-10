@@ -256,11 +256,11 @@ summary {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: #000000;
   background-color: #E5E5E5;
 }
 
@@ -364,7 +364,6 @@ p {
 
 .text-discription {
   line-height: 1.71;
-  color: #757575;
 }
 
 /* my project section */
@@ -605,8 +604,7 @@ p {
 }
 
 .contacts-section,
-.tech-skills-section,
-.soft-skills-section {
+.skills-section {
   margin-top: 50px;
 }
 
@@ -678,8 +676,8 @@ p {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .soft-skills-section {
+@media screen and (max-width: 768px) {
+  .skills-section {
     display: none;
   }
 }

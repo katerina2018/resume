@@ -1,177 +1,328 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Yevstyhnieieva_Katerina_Front_end</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- main section -->
     <div class="container">
-        <div class="main-section">
-            <!-- main content -->
-            <div class="main-content-section">
-                <!-- about me section -->
-                <section class="section-margin-bottom">
-                    <button class="modal-toggle js-close-menu" data-modal-open>
-                      
-                        <svg class="modal-icon">
-                            <use href="./img/symbol-defs.svg#icon-user_femal"></use>
-                        </svg>
-                    </button>
-                    <h2 class="main-suptitle" lang="en">WEB-верстальщик</h2>
-                    <h1 class="main-title">Екатерина Евстигнеева</h1>
-                    <p class="text-discription">
-                        Имею теоретические знания WEB технологий и огромное желание воплотить их на практике. Хочу создавать сайты, брать активное участие в командной работе по созданию проектов.
+      <div class="main-section">
+        <!-- main content -->
+        <div class="main-content-section">
+          <!-- about me section -->
+          <section class="section-margin-bottom">
+            <button class="modal-toggle js-close-menu" data-modal-open>
+              <svg class="modal-icon">
+                <use href="./img/symbol-defs.svg#icon-user_femal"></use>
+              </svg>
+            </button>
+            <!-- <h2 class="main-suptitle" lang="en"></h2> -->
+            <h1 class="main-title">Kateryna Yevstyhnieieva</h1>
+            <p class="text-discription">
+              I am a Front-End developer looking for a full-time position in a
+              company as Trainee/Junior. I have knowledge of HTML, CSS,
+              JavaScript and React. Also, I have hands-on experience in
+              following Agile/Scrum methodology when working in a team. I am
+              conscientious, responsible and eager to learn.
+            </p>
+          </section>
+          <!-- my project section -->
+          <section class="section-margin-bottom">
+            <h3 class="section-title">Projects</h3>
+            <ul class="filter-cards">
+              <li class="filter-cards__item">
+                <a
+                  href="https://katerina2018.github.io/WebStudio"
+                  target="blank"
+                  class="filter-cards__link"
+                >
+                  <div class="filter-cards__thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./img/website-450.jpg     1x,
+                          ./img/website-450-@2x.jpg 2x
+                        "
+                        media="(max-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/website-354.jpg     1x,
+                          ./img/website-354-@2x.jpg 2x
+                        "
+                        media="(min-width: 768px) and (max-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/website-370.jpg     1x,
+                          ./img/website-370-@2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <img
+                        src="./img/website-370.jpg"
+                        alt="Веб-сайт веб студия"
+                      />
+                    </picture>
+                    <p class="filter-cards__description">
+                      WebStudio - adaptive web studio website.
                     </p>
-                </section>
-                <!-- my project section -->
-                <section class="section-margin-bottom">
-                    <h3 class="section-title">Проекты</h3>
-                    <ul class="filter-cards">
-                        <li class="filter-cards__item">
-                            <a href="https://katerina2018.github.io/WebStudio" target="blank" class="filter-cards__link">
-                                <div class="filter-cards__thumb">
-                                    <picture>
-                                        <source srcset="./img/website-450.jpg 1x, ./img/website-450-@2x.jpg 2x" media="(max-width: 768px)">
-                                        <source srcset="./img/website-354.jpg 1x, ./img/website-354-@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1200px)">
-                                        <source srcset="./img/website-370.jpg 1x,  ./img/website-370-@2x.jpg 2x" media="(min-width: 1200px)">
-                                        <img src="./img/website-370.jpg" alt="Веб-сайт веб студия">
-                                    </picture>
-                                    <p class="filter-cards__description">WebStudio - адаптивный сайт веб студии.</p>
-                                </div>
-                                <div class="filter-cards__content">
-                                    <h2 class="filter-cards__title">WebStudio</h2>
-                                    <p class="filter-cards__text">Веб-сайт</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="filter-cards__item">
-                            <a target="blank" href="https://katerina2018.github.io/barber-shop/" class="filter-cards__link">
-                                <div class="filter-cards__thumb">
-                                    <picture>
-                                        <source srcset="./img/barber-shop-450.jpg 1x, ./img/barber-shop-450-@2x.jpg 2x" media="(max-width: 768px)">
-                                        <source srcset="./img/barber-shop-354.jpg 1x, ./img/barber-shop-354-@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1200px)">
-                                        <source srcset="./img/barber-shop-370.jpg 1x,  ./img/barber-shop-370-@2x.jpg 2x" media="(min-width: 1200px)">
-                                        <img src="./img/barber-shop-370.jpg" alt="Веб-сайт Barbershop ">
-                                    </picture>
-                                    <p class="filter-cards__description">BarberShop - landing page. </p>
-                                </div>
-                                <div class="filter-cards__content">
-                                    <h2 class="filter-cards__title">BarberShop</h2>
-                                    <p class="filter-cards__text">Веб-сайт</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="filter-cards__item">
-                            <a target="blank" href="https://katerina2018.github.io/Landing-Page/docs/index.html" class="filter-cards__link">
-                                <div class="filter-cards__thumb">
-                                    <picture>
-                                        <source srcset="./img/bino-450.jpg 1x, ./img/bino-450-@2x.jpg 2x" media="(max-width: 768px)">
-                                        <source srcset="./img/bino-354.jpg 1x, ./img/bino-354-@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1200px)">
-                                        <source srcset="./img/bino-370.jpg 1x,  ./img/bino-370-@2x.jpg 2x" media="(min-width: 1200px)">
-                                        <img src="./img/bino-370.jpg" alt="Веб-сайт Бино">
-                                    </picture>
-                                    <p class="filter-cards__description">Bino - landing page. Мобильная и десктопная верстка сайта</p>
-                                </div>
-                                <div class="filter-cards__content">
-                                    <h2 class="filter-cards__title">Bino</h2>
-                                    <p class="filter-cards__text">Веб-сайт</p>
-                                </div>
-                            </a>
-                        </li>
-
-                    </ul>
-                </section>
-                <!-- my work experience -->
-                <section class="section-margin-bottom">
-                    <h3 class="section-title">Опыт работы</h3>
-                    <!-- company 1 -->
-                    <div class="experience-company-block">
-                        <h4 class="experience-position">Педагог, <span class="experience-company">Дворец творчества учащихся</span> </h4>
-                        <p class="experience-period">сентябрь 2009 - май 2019</p>
-                        <ul class="experience-duties">
-                            <li class="experience-duty">HTML5, CSS3, JavaScript</li>
-                            <li class="experience-duty">Подготовка учеников к городским и областным конкурсам</li>
-                            <li class="experience-duty">Организация внутренних мероприятий </li>
-                        </ul>
-                    </div>
-                    <!-- company 2 -->
-                    <div class="experience-company-block">
-                        <h4 class="experience-position">Инженер конструктор, <span class="experience-company">Zaliv Ship Design</span> </h4>
-                        <p class="experience-period">май 2019 - июнь 2021
-                            <ul class="experience-duties">
-                                <li class="experience-duty">Работа в команде </li>
-                                <li class="experience-duty">Проектирование судовых систем</li>
-                            </ul>
-                    </div>
-                </section>
-                <!-- my education -->
-                <section class="section-margin-bottom">
-                    <h3 class="section-title">Образование</h3>
-                    <!-- university 1 -->
-                    <div>
-                        <h4 class="my-education-title">Национальный университет кораблестроения </h4>
-                        <p class="my-education-profession">Судовые энергетические установки и оборудование, инженер конструктор</p>
-                        <p class="my-education-period">2003-2009 <span class="my-education-divider">|</span> Николаев</p>
-                    </div>
-                    <div>
-                        <h4 class="my-education-title">Beetroot Академия</h4>
-                        <p class="my-education-profession">Frond-End Developer, Junior</p>
-                        <p class="my-education-period">2018 <span class="my-education-divider">|</span> Николаев</p>
-                    </div>
-                    <div>
-                        <h4 class="my-education-title"> htmlacademy.ru</h4>
-                        <p class="my-education-profession">HTLM, CSS, JAVASCRIPT</p>
-                        <p class="my-education-period">2018 </p>
-                    </div>
-                </section>
+                  </div>
+                  <div class="filter-cards__content">
+                    <h2 class="filter-cards__title">WebStudio</h2>
+                    <p class="filter-cards__text">Website</p>
+                  </div>
+                </a>
+              </li>
+              <li class="filter-cards__item">
+                <a
+                  target="blank"
+                  href="https://katerina2018.github.io/barber-shop/"
+                  class="filter-cards__link"
+                >
+                  <div class="filter-cards__thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./img/barber-shop-450.jpg     1x,
+                          ./img/barber-shop-450-@2x.jpg 2x
+                        "
+                        media="(max-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/barber-shop-354.jpg     1x,
+                          ./img/barber-shop-354-@2x.jpg 2x
+                        "
+                        media="(min-width: 768px) and (max-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/barber-shop-370.jpg     1x,
+                          ./img/barber-shop-370-@2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <img
+                        src="./img/barber-shop-370.jpg"
+                        alt="Веб-сайт Barbershop "
+                      />
+                    </picture>
+                    <p class="filter-cards__description">
+                      BarberShop - landing page.
+                    </p>
+                  </div>
+                  <div class="filter-cards__content">
+                    <h2 class="filter-cards__title">BarberShop</h2>
+                    <p class="filter-cards__text">Website</p>
+                  </div>
+                </a>
+              </li>
+              <li class="filter-cards__item">
+                <a
+                  target="blank"
+                  href="https://katerina2018.github.io/Landing-Page/docs/index.html"
+                  class="filter-cards__link"
+                >
+                  <div class="filter-cards__thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./img/bino-450.jpg     1x,
+                          ./img/bino-450-@2x.jpg 2x
+                        "
+                        media="(max-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/bino-354.jpg     1x,
+                          ./img/bino-354-@2x.jpg 2x
+                        "
+                        media="(min-width: 768px) and (max-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/bino-370.jpg     1x,
+                          ./img/bino-370-@2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <img src="./img/bino-370.jpg" alt="Веб-сайт Бино" />
+                    </picture>
+                    <p class="filter-cards__description">
+                      Bino - landing page. Mobile and desktop site layout
+                    </p>
+                  </div>
+                  <div class="filter-cards__content">
+                    <h2 class="filter-cards__title">Bino</h2>
+                    <p class="filter-cards__text">Website</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <!-- my work experience -->
+          <section class="section-margin-bottom">
+            <h3 class="section-title">WORK EXPERIENCE</h3>
+            <!-- company 1 -->
+            <div class="experience-company-block">
+              <h4 class="experience-position">
+                Teacher,
+                <span class="experience-company"
+                  >Palace of creativity of pupils: Teacher
+                </span>
+              </h4>
+              <p class="experience-period">2009 - 2019</p>
+              <ul class="experience-duties">
+                <li class="experience-duty">
+                  Conducting classes in the WEB direction
+                </li>
+                <li class="experience-duty">
+                  Preparation for city and regional competitions
+                </li>
+                <li class="experience-duty">Work with gifted children</li>
+              </ul>
             </div>
-            <!-- sidebar section - modal -->
-            <div class="backdrop is-hidden sidebar-section" data-modal>
-                <aside class=" modal">
-                    <button class="close" data-modal-close><svg class="close__icon">
-
-                            <use href="./img/symbol-defs.svg#icon-close"></use>
-                        </svg></button>
-                    <img class="main-photo" src="./img/photo.jpg" alt="my photo">
-                    <!-- contacts section -->
-                    <div class="contacts-section">
-                        <h3 class="sidebar-title">Контакты</h3>
-                        <div class="contacts-section-block"> <span class="contacts-section-type">Т:</span> <a class="contacts-section-link contacts-section-link-tel" href="tel:+380971414345">+380971414345</a> </div>
-                        <div class="contacts-section-block"> <span class="contacts-section-type">E:</span>
-                            <a class="contacts-section-link" href="mailto:tvorchestvo15@gmail.com">tvorchestvo15@gmail.com</a> </div>
-                    </div>
-                    <!-- tech skills section -->
-                    <div class="tech-skills-section">
-                        <h3 class="sidebar-title">Tech Skills</h3>
-                        <ul class="skills-list">
-                            <li class="skills-item">HTML5</li>
-                            <li class="skills-item">CSS3</li>
-                            <li class="skills-item">SASS</li>
-                            <li class="skills-item">JAVASCRIPT</li>
-                            <li class="skills-item">GIT</li>
-                        </ul>
-                    </div>
-                    <!-- Soft Skills section -->
-                    <div class="soft-skills-section">
-                        <h3 class="sidebar-title">Soft Skills</h3>
-                        <ul class="skills-list">
-                            <li class="skills-item">Scrum</li>
-                            <li class="skills-item">Agile</li>
-                            <li class="skills-item">Teamwork</li>
-                        </ul>
-                    </div>
-                </aside>
+            <!-- company 2 -->
+            <div class="experience-company-block">
+              <h4 class="experience-position">
+                Mechanical Engineer (Piping),
+                <span class="experience-company">Zaliv Ship Design</span>
+              </h4>
+              <p class="experience-period">2019 - 2021</p>
+              <ul class="experience-duties">
+                <li class="experience-duty">
+                  Analysis of class project input information
+                </li>
+                <li class="experience-duty">
+                  3D modeling, based on schematic diagrams
+                </li>
+                <li class="experience-duty">
+                  Issue isometric sketches and drawings
+                </li>
+                <li class="experience-duty">
+                  Formation of material specifications
+                </li>
+              </ul>
             </div>
+          </section>
+          <!-- my education -->
+          <section class="section-margin-bottom">
+            <h3 class="section-title">EDUCATION</h3>
+            <!-- university 1 -->
+            <div>
+              <h4 class="my-education-title">
+                National University of Shipbuilding
+              </h4>
+              <p class="my-education-profession">Master of Energetic</p>
+              <p class="my-education-period">
+                2003-2009 <span class="my-education-divider">|</span> Mykolaiv
+              </p>
+            </div>
+            <h3 class="section-title">ADDITIONAL INFORMATION:</h3>
+            <div>
+              <ul>
+                <li class="additional-info">
+                  IT School GoIT: Full stack developer
+                </li>
+                <li class="additional-info">
+                  Successfully completed Frond-End Developer course (Junior) in
+                  Beetroot Academy.
+                </li>
+                <li class="additional-info">
+                  htmlacademy.ru course: HTLM, CSS, JAVASCRIPT
+                </li>
+                <li class="additional-info">demiart.ru: Photoshop</li>
+              </ul>
+            </div>
+          </section>
         </div>
+        <!-- sidebar section - modal -->
+        <div class="backdrop is-hidden sidebar-section" data-modal>
+          <aside class="modal">
+            <button class="close" data-modal-close>
+              <svg class="close__icon">
+                <use href="./img/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+            <img class="main-photo" src="./img/photo.jpg" alt="my photo" />
+            <!-- contacts section -->
+            <div class="contacts-section">
+              <h3 class="sidebar-title">CONTACTS</h3>
+              <div class="contacts-section-block">
+                <span class="contacts-section-type">P:</span>
+                <a
+                  class="contacts-section-link contacts-section-link-tel"
+                  href="tel:+380971414345"
+                  >+380971414345</a
+                >
+              </div>
+              <div class="contacts-section-block">
+                <span class="contacts-section-type">E:</span>
+                <a
+                  class="contacts-section-link"
+                  href="mailto:tvorchestvo15@gmail.com"
+                  >tvorchestvo15@gmail.com</a
+                >
+              </div>
+              <div class="contacts-section-block">
+                <span class="contacts-section-type">Linkedin:</span>
+                <a
+                  class="contacts-section-link"
+                  href="https://www.linkedin.com/in/kateryna-yevstyhnieieva-7712b2179/" target="blank"
+                  >https://www.linkedin.com/in/kateryna-yevstyhnieieva-7712b2179/</a
+                >
+              </div>
+                <p class="contacts-section-link">Skype: katerina34423</p>
+                <p class="contacts-section-link">Mykolaiv, Ukraine</p>
+            
+            <!-- tech skills section -->
+            <div class="skills-section">
+              <h3 class="sidebar-title">TECH SKILLS</h3>
+                <ul class="skills-list">
+                <li class="skills-item">HTML5, CSS3</li>
+                <li class="skills-item">SASS</li>
+                <li class="skills-item">JavaScript</li>
+                <li class="skills-item">React</li>
+                <li class="skills-item">Bootstrap</li>
+                <li class="skills-item">GIT</li>
+                <li class="skills-item">WebPack/Gulp</li>
+                <li class="skills-item">Parcel</li>
+                <li class="skills-item">Figma, Photoshop</li>
+              </ul>
+            </div>
+            <!-- Soft Skills section -->
+         <div class="skills-section">
+              <h3 class="sidebar-title">SOFT SKILLS</h3>
+              <ul class="skills-list">
+                <li class="skills-item">Sociability</li>
+                <li class="skills-item">Teamwork</li>
+                <li class="skills-item">Cheerful</li>
+                <li class="skills-item">Punctual</li>
+              </ul>
+            </div>
+            <!-- Soft Skills section -->
+             <div class="skills-section">
+              <h3 class="sidebar-title">LANGUAGE SKILLS</h3>
+              <ul class="skills-list">
+                <li class="skills-item">Ukrainian - native</li>
+                <li class="skills-item">Russian - native</li>
+                <li class="skills-item">English - Pre-Intermediate</li>
+              </ul>
+            </div>
+            </aside>
+        </div>
+      </div>
     </div>
     <script src="./js/modal.js"></script>
-</body>
-
+  </body>
 </html>
